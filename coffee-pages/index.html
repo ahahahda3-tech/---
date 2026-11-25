@@ -1,0 +1,545 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кофе Ягоды — кофейня на Бруснёва, 11Б · Ставрополь</title>
+  <meta name="description" content="Кофе Ягоды — маленькая кофейня-кондитерская в Ставрополе на Бруснёва, 11Б. Капучино, рафы на ягодах, булочки с повидлом, сырники и чизкейки. Ежедневно с 8:00 до 21:00.">
+  <meta name="theme-color" content="#170e0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Кофе Ягоды — кофейня на Бруснёва, 11Б">
+  <meta property="og:description" content="Капучино, рафы на ягодах и булочки, из которых медленно течёт повидло. Ставрополь, Бруснёва, 11Б.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='34' r='26' fill='%23a8233f'/%3E%3Cpath d='M32 8c6 6 6 12 0 16-6-4-6-10 0-16z' fill='%237d8f6a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ================= SVG SPRITE ================= -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bunGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0c07a"/>
+      <stop offset=".55" stop-color="#d9974c"/>
+      <stop offset="1" stop-color="#b06f34"/>
+    </linearGradient>
+    <linearGradient id="jamGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9304e"/>
+      <stop offset=".6" stop-color="#a31f3a"/>
+      <stop offset="1" stop-color="#74122a"/>
+    </linearGradient>
+    <linearGradient id="chocGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a2a1c"/>
+      <stop offset="1" stop-color="#2a1610"/>
+    </linearGradient>
+    <linearGradient id="cheeseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6e2"/>
+      <stop offset="1" stop-color="#f0d9ad"/>
+    </linearGradient>
+  </defs>
+
+  <symbol id="i-cup" viewBox="0 0 200 200">
+    <ellipse cx="100" cy="171" rx="58" ry="9" fill="#1a100c" opacity=".10"/>
+    <path d="M148 92c16 0 25 11 25 23s-9 22-25 22" fill="none" stroke="#e9dac6" stroke-width="13" stroke-linecap="round"/>
+    <path d="M54 76h92l-9 66c-2 13-13 21-27 21H90c-14 0-25-8-27-21z" fill="#fffdf8" stroke="#e6d6c1" stroke-width="4"/>
+    <ellipse cx="100" cy="76" rx="46" ry="11" fill="#5e3720"/>
+    <ellipse cx="100" cy="73" rx="42" ry="9" fill="var(--foam,#f0dfc6)"/>
+    <ellipse cx="86" cy="70" rx="15" ry="3.6" fill="#fff" opacity=".55"/>
+  </symbol>
+
+  <symbol id="i-glass" viewBox="0 0 200 200">
+    <ellipse cx="100" cy="178" rx="44" ry="8" fill="#1a100c" opacity=".12"/>
+    <path d="M70 34h60l-7 128c-1 12-11 18-23 18s-22-6-23-18z" fill="#fffdf8" stroke="#e6d6c1" stroke-width="4"/>
+    <path d="M74 74h52l-5 84c-1 8-10 13-21 13s-20-5-21-13z" fill="var(--liquid,#b07a45)"/>
+    <g fill="#ffffff" opacity=".55">
+      <rect x="82" y="88" width="26" height="26" rx="5" transform="rotate(-12 95 101)"/>
+      <rect x="106" y="112" width="22" height="22" rx="5" transform="rotate(16 117 123)"/>
+    </g>
+    <rect x="112" y="18" width="10" height="60" rx="5" fill="var(--straw,#a8233f)" transform="rotate(12 117 48)"/>
+  </symbol>
+
+  <symbol id="i-bun" viewBox="0 0 200 200">
+    <ellipse cx="100" cy="174" rx="64" ry="9" fill="#1a100c" opacity=".12"/>
+    <path d="M36 122c0-38 28-64 64-64s64 26 64 64c0 30-28 46-64 46s-64-16-64-46z" fill="url(#bunGrad)"/>
+    <path d="M46 104c8-28 30-44 54-44s46 16 54 44c-14 8-36 12-54 12s-40-4-54-12z" fill="#f6cd8c" opacity=".55"/>
+    <path d="M44 112c18-14 38-18 56-18s38 4 56 18c-2 10-8 16-16 18-8-8-22-12-40-12s-32 4-40 12c-8-2-14-8-16-18z" fill="url(#jamGrad)"/>
+    <g fill="url(#jamGrad)">
+      <path d="M58 118c6 0 9 4 9 10v20c0 6-3 10-9 10s-9-4-9-10v-20c0-6 3-10 9-10z"/>
+      <path d="M142 120c6 0 9 4 9 10v14c0 6-3 10-9 10s-9-4-9-10v-14c0-6 3-10 9-10z" opacity=".9"/>
+      <circle cx="58" cy="164" r="7"/>
+    </g>
+    <ellipse cx="82" cy="96" rx="16" ry="5" fill="#fff" opacity=".35"/>
+  </symbol>
+
+  <symbol id="i-cheesecake" viewBox="0 0 200 200">
+    <ellipse cx="100" cy="170" rx="62" ry="9" fill="#1a100c" opacity=".12"/>
+    <path d="M30 130l70-86 70 86z" fill="url(#cheeseGrad)" stroke="#ead6ae" stroke-width="3"/>
+    <path d="M30 130l70-86 70 86z" fill="none" stroke="#e2c894" stroke-width="3"/>
+    <path d="M36 126h128l-6 16c-2 6-8 9-15 9H57c-7 0-13-3-15-9z" fill="#d9a35f"/>
+    <path d="M50 120h100l-4 8H54z" fill="#f7e6c6"/>
+    <g fill="#c9304e"><circle cx="86" cy="118" r="4"/><circle cx="100" cy="115" r="4"/><circle cx="114" cy="119" r="4"/></g>
+  </symbol>
+
+  <symbol id="i-syrniki" viewBox="0 0 200 200">
+    <ellipse cx="100" cy="168" rx="66" ry="10" fill="#1a100c" opacity=".10"/>
+    <ellipse cx="72" cy="140" rx="34" ry="17" fill="#e8b96c"/>
+    <ellipse cx="128" cy="140" rx="34" ry="17" fill="#e8b96c"/>
+    <ellipse cx="100" cy="122" rx="36" ry="18" fill="#f0c47c"/>
+    <ellipse cx="100" cy="118" rx="30" ry="14" fill="#f7d79a"/>
+    <path d="M84 112c4-6 12-8 18-6 6 2 10 6 10 10-8 4-20 4-28-4z" fill="#fffaf0"/>
+    <path d="M60 120c0 10 8 18 18 18" fill="none" stroke="#c98a3f" stroke-width="3" opacity=".5"/>
+  </symbol>
+
+  <symbol id="i-sandwich" viewBox="0 0 200 200">
+    <ellipse cx="100" cy="172" rx="62" ry="9" fill="#1a100c" opacity=".12"/>
+    <path d="M34 130l66-84 66 84z" fill="#e8b46a"/>
+    <path d="M42 128l58-74 58 74z" fill="#f2cb8c"/>
+    <path d="M46 118h108l-6 12H52z" fill="#8fbf6a"/>
+    <path d="M54 110h92l-5 10H59z" fill="#d9536b"/>
+    <path d="M38 138h124l-4 12c-2 7-9 11-17 11H59c-8 0-15-4-17-11z" fill="#e0a95c"/>
+  </symbol>
+
+  <symbol id="i-berry" viewBox="0 0 200 200">
+    <ellipse cx="100" cy="176" rx="46" ry="8" fill="#1a100c" opacity=".12"/>
+    <path d="M100 44c26 0 48 22 48 50 0 32-22 62-48 62s-48-30-48-62c0-28 22-50 48-50z" fill="#c9304e"/>
+    <path d="M100 44c26 0 48 22 48 50 0 32-22 62-48 62s-48-30-48-62c0-28 22-50 48-50z" fill="url(#chocGrad)" opacity=".0"/>
+    <path d="M100 132c-20 0-36-24-36-50h72c0 26-16 50-36 50z" fill="url(#chocGrad)"/>
+    <g fill="#f7e2b8" opacity=".9">
+      <ellipse cx="84" cy="88" rx="3" ry="5" transform="rotate(-20 84 88)"/>
+      <ellipse cx="100" cy="82" rx="3" ry="5"/>
+      <ellipse cx="116" cy="88" rx="3" ry="5" transform="rotate(20 116 88)"/>
+    </g>
+    <path d="M100 44c8-10 20-14 30-12-2 12-10 22-22 26z" fill="#7d8f6a"/>
+  </symbol>
+
+  <symbol id="i-oat" viewBox="0 0 200 200">
+    <ellipse cx="100" cy="170" rx="62" ry="9" fill="#1a100c" opacity=".12"/>
+    <path d="M34 96h132c0 34-26 58-66 58s-66-24-66-58z" fill="#fffdf8" stroke="#e6d6c1" stroke-width="4"/>
+    <ellipse cx="100" cy="96" rx="66" ry="16" fill="#f0dfc6"/>
+    <ellipse cx="100" cy="94" rx="56" ry="12" fill="#e9cf9f"/>
+    <path d="M64 92c12-6 24-4 36 2s24 6 36 0" fill="none" stroke="#fff8ea" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+    <circle cx="88" cy="88" r="5" fill="#f2d27a"/>
+    <circle cx="112" cy="90" r="4" fill="#f2d27a"/>
+  </symbol>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<header class="hero" id="top">
+  <div class="hero__glow"></div>
+  <div class="hero__beans" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a class="logo" href="#top" aria-label="Кофе Ягоды — на главную">
+      <svg class="logo__berry" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="36" r="20" fill="#c9304e"/>
+        <circle cx="26" cy="30" r="3" fill="#f7e2b8" opacity=".85"/>
+        <circle cx="38" cy="32" r="2.4" fill="#f7e2b8" opacity=".85"/>
+        <circle cx="33" cy="42" r="2.2" fill="#f7e2b8" opacity=".85"/>
+        <path d="M32 16c5-6 13-8 19-7-1 7-7 13-15 15z" fill="#7d8f6a"/>
+      </svg>
+      <span class="logo__text">Кофе <em>Ягоды</em></span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="#menu">Кофе</a></li>
+      <li><a href="#bakery">Выпечка</a></li>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+    <a class="nav__phone" href="tel:+79880969030">+7 988 096-90-30</a>
+  </nav>
+
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow"><span class="dot"></span>Ставрополь · Бруснёва, 11Б</p>
+      <h1>Кофе, в котором<br>живёт <em>ягода</em></h1>
+      <p class="lead">Капучино на зерне свежей обжарки, рафы на смородине и булочки, из которых медленно течёт повидло. Варим каждое утро — с восьми.</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="#menu">Смотреть меню</a>
+        <a class="btn btn--ghost" href="https://yandex.ru/maps/org/kofe_yagody/133232600497/" target="_blank" rel="noopener">Проложить маршрут</a>
+      </div>
+      <div class="rating">
+        <span class="rating__stars" aria-hidden="true">★★★★☆</span>
+        <span class="rating__value">4,1</span>
+        <span class="rating__note">21 отзыв на Яндекс.Картах</span>
+      </div>
+    </div>
+
+    <div class="hero__art" aria-hidden="true">
+      <svg class="cup-top" viewBox="0 0 640 640">
+        <defs>
+          <radialGradient id="coffeeGrad" cx="42%" cy="38%" r="62%">
+            <stop offset="0" stop-color="#8a5734"/>
+            <stop offset=".55" stop-color="#5e3720"/>
+            <stop offset="1" stop-color="#3a2013"/>
+          </radialGradient>
+          <radialGradient id="saucerGrad" cx="40%" cy="34%" r="72%">
+            <stop offset="0" stop-color="#fbf3e6"/>
+            <stop offset="1" stop-color="#e9d6bd"/>
+          </radialGradient>
+          <radialGradient id="cupGrad" cx="38%" cy="30%" r="80%">
+            <stop offset="0" stop-color="#fffdf9"/>
+            <stop offset="1" stop-color="#f2e5d2"/>
+          </radialGradient>
+          <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="26"/>
+          </filter>
+        </defs>
+
+        <ellipse cx="330" cy="380" rx="280" ry="250" fill="#000" opacity=".45" filter="url(#softShadow)"/>
+        <circle cx="320" cy="320" r="278" fill="url(#saucerGrad)"/>
+        <circle cx="320" cy="320" r="278" fill="none" stroke="#dcc7aa" stroke-width="3"/>
+        <path d="M552 292h30a28 28 0 0 1 0 56h-30" fill="none" stroke="#efdfc7" stroke-width="22" stroke-linecap="round"/>
+        <path d="M552 292h30a28 28 0 0 1 0 56h-30" fill="none" stroke="#e2cfb2" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+        <circle cx="320" cy="320" r="248" fill="url(#cupGrad)"/>
+        <circle cx="320" cy="320" r="248" fill="none" stroke="#eadcc8" stroke-width="3"/>
+        <circle cx="320" cy="320" r="220" fill="#fffaf2"/>
+        <circle cx="320" cy="320" r="212" fill="url(#coffeeGrad)"/>
+        <circle cx="320" cy="320" r="216" fill="none" stroke="#e8d4b8" stroke-width="10" opacity=".55"/>
+
+        <g fill="none" stroke="#b07b46" stroke-width="9" opacity=".22" stroke-linecap="round">
+          <path d="M170 290c30-26 74-38 118-34"/>
+          <path d="M470 350c-26 28-66 42-108 40"/>
+          <path d="M250 430c-24-16-40-40-46-66"/>
+        </g>
+        <path d="M196 250c22-38 62-62 108-66" fill="none" stroke="#c08a52" stroke-width="14" stroke-linecap="round" opacity=".18"/>
+
+        <g class="latte-art">
+          <path d="M320 402c-72-50-88-102-64-126 24-22 54-8 64 18 10-26 40-40 64-18 24 24 8 76-64 126z" fill="#f8ecd8"/>
+          <path d="M286 300c-10 12-10 28 2 40" fill="none" stroke="#fffaf1" stroke-width="9" stroke-linecap="round" opacity=".5"/>
+          <ellipse cx="320" cy="410" rx="46" ry="6" fill="#3a2013" opacity=".18"/>
+        </g>
+
+        <g fill="#5b3a24" opacity=".95">
+          <ellipse cx="152" cy="470" rx="20" ry="13" transform="rotate(-24 152 470)"/>
+          <ellipse cx="452" cy="470" rx="20" ry="13" transform="rotate(24 452 470)"/>
+        </g>
+        <g stroke="#3a2013" stroke-width="3" opacity=".6">
+          <path d="M140 464c10 4 20 8 26 12"/>
+          <path d="M462 476c-10-4-19-8-25-12"/>
+        </g>
+
+
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero__products" id="hits">
+    <article class="mini">
+      <svg class="mini__icon" style="--foam:#f0dfc6"><use href="#i-cup"/></svg>
+      <div><h3>Капучино</h3><p>250 мл · 220 ₽</p></div>
+    </article>
+    <article class="mini">
+      <svg class="mini__icon" style="--foam:#d9b183"><use href="#i-cup"/></svg>
+      <div><h3>Раф на смородине</h3><p>300 мл · 290 ₽</p></div>
+    </article>
+    <article class="mini">
+      <svg class="mini__icon" style="--liquid:#c99a63"><use href="#i-glass"/></svg>
+      <div><h3>Айс-латте</h3><p>350 мл · 300 ₽</p></div>
+    </article>
+    <article class="mini">
+      <svg class="mini__icon" style="--jam:#a8233f"><use href="#i-bun"/></svg>
+      <div><h3>Булочка с повидлом</h3><p>150 ₽</p></div>
+    </article>
+  </div>
+
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 420" preserveAspectRatio="none">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="22" result="blur"/>
+          <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -12" result="goo"/>
+          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+      </defs>
+      <g class="foam-group" filter="url(#goo)" fill="#f7efe3">
+        <rect x="-40" y="318" width="1520" height="200"/>
+        <ellipse class="blob b1" cx="140" cy="336" rx="170" ry="46"/>
+        <ellipse class="blob b2" cx="420" cy="346" rx="200" ry="42"/>
+        <ellipse class="blob b3" cx="760" cy="330" rx="230" ry="54"/>
+        <ellipse class="blob b4" cx="1080" cy="348" rx="190" ry="40"/>
+        <ellipse class="blob b5" cx="1340" cy="338" rx="170" ry="44"/>
+        <ellipse class="blob b6" cx="620" cy="352" rx="130" ry="40"/>
+        <ellipse class="blob b7" cx="980" cy="356" rx="120" ry="38"/>
+        <circle class="blob b8" cx="300" cy="330" r="42"/>
+        <circle class="blob b9" cx="1150" cy="336" r="34"/>
+      </g>
+      <g class="foam-dots" fill="#fffaf1" opacity=".7">
+        <circle cx="300" cy="330" r="7"/><circle cx="360" cy="352" r="4"/>
+        <circle cx="700" cy="340" r="6"/><circle cx="742" cy="356" r="3.5"/>
+        <circle cx="1120" cy="336" r="5"/><circle cx="1180" cy="352" r="3"/>
+      </g>
+    </svg>
+  </div>
+</header>
+
+<main>
+  <!-- ================= MENU ================= -->
+  <section class="section menu" id="menu">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow eyebrow--dark"><span class="dot"></span>Меню</p>
+        <h2>Что мы варим</h2>
+        <p class="sec-sub">Зерно свежей обжарки, молоко и ягоды — без сиропов «со вкусом». Размер и молоко подберём под настроение.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card reveal">
+          <span class="tag">хит</span>
+          <svg class="card__pict" style="--foam:#f2e2c9"><use href="#i-cup"/></svg>
+          <h3>Капучино</h3>
+          <p class="card__desc">Плотная пенка, шоколадный финиш. 200 или 300 мл.</p>
+          <p class="card__price">от 220 ₽</p>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card__pict" style="--foam:#d9b183"><use href="#i-cup"/></svg>
+          <h3>Раф на смородине</h3>
+          <p class="card__desc">Сливки, смородиновый пюре и щепотка соли — ягодный, но не приторный.</p>
+          <p class="card__price">290 ₽</p>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card__pict" style="--foam:#e8d3b4"><use href="#i-cup"/></svg>
+          <h3>Латте</h3>
+          <p class="card__desc">Мягкий и молочный. С собой — в стакане, с рисунком на пенке.</p>
+          <p class="card__price">270 ₽</p>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card__pict" style="--foam:#c99a63"><use href="#i-cup"/></svg>
+          <h3>Флэт уайт</h3>
+          <p class="card__desc">Двойной эспрессо и тонкий слой микропены. Для тех, кто любит покрепче.</p>
+          <p class="card__price">260 ₽</p>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card__pict" style="--foam:#6b4128"><use href="#i-cup"/></svg>
+          <h3>Эспрессо</h3>
+          <p class="card__desc">30 мл характера. Пейте сразу — пока крема не осела.</p>
+          <p class="card__price">180 ₽</p>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card__pict" style="--liquid:#c09062"><use href="#i-glass"/></svg>
+          <h3>Айс-латте</h3>
+          <p class="card__desc">Лёд, молоко, эспрессо. В жару спасает лучше всего.</p>
+          <p class="card__price">300 ₽</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BAKERY ================= -->
+  <section class="section bakery" id="bakery">
+    <div class="wrap bakery__grid">
+      <div class="bakery__copy reveal">
+        <p class="eyebrow eyebrow--dark"><span class="dot"></span>Выпечка</p>
+        <h2>Повидло, которое<br>никуда не торопится</h2>
+        <p class="sec-sub">Булочки печём сами: тесто подходит медленно, повидло стекает ещё медленнее. Забирайте тёплыми — до полудня разлетаются.</p>
+
+        <ul class="bakery__list">
+          <li><span>Булочка с вишнёвым повидлом</span><b>150 ₽</b></li>
+          <li><span>Сырники со сгущёнкой</span><b>320 ₽</b></li>
+          <li><span>Чизкейк ванильный с малиной</span><b>275 ₽</b></li>
+          <li><span>Сэндвич с ветчиной и чеддером</span><b>370 ₽</b></li>
+          <li><span>Клубника в шоколаде</span><b>от 2 070 ₽</b></li>
+        </ul>
+        <p class="note">Цены ориентировочные — уточняйте на месте.</p>
+      </div>
+
+      <div class="bakery__art reveal" aria-hidden="true">
+        <svg viewBox="0 170 620 400" class="buns">
+          <defs>
+            <linearGradient id="bunBig" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f4c583"/>
+              <stop offset="1" stop-color="#d99a52"/>
+            </linearGradient>
+            <linearGradient id="jam" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#b62745"/>
+              <stop offset="1" stop-color="#8c1730"/>
+            </linearGradient>
+            <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#fffaf1"/>
+              <stop offset="1" stop-color="#eeddc4"/>
+            </linearGradient>
+            <filter id="bunShadow" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="18"/>
+            </filter>
+          </defs>
+
+          <ellipse cx="310" cy="500" rx="262" ry="34" fill="#a97f5c" opacity=".28" filter="url(#bunShadow)"/>
+
+          <ellipse cx="310" cy="432" rx="286" ry="88" fill="url(#plate)" stroke="#e2ceb2" stroke-width="4"/>
+          <ellipse cx="310" cy="428" rx="240" ry="66" fill="#fdf8ef" stroke="#ead7bd" stroke-width="3"/>
+
+          <g class="bun bun--back">
+            <ellipse cx="122" cy="362" rx="112" ry="86" fill="url(#bunBig)" stroke="#b9782f" stroke-width="5"/>
+            <path d="M34 342c14-28 48-44 90-44s76 16 90 44c-16 16-50 24-90 24s-74-8-90-24z" fill="url(#jam)" stroke="#7a1229" stroke-width="4"/>
+          </g>
+          <g class="bun bun--back2">
+            <ellipse cx="500" cy="366" rx="106" ry="80" fill="url(#bunBig)" stroke="#b9782f" stroke-width="5"/>
+            <path d="M418 346c14-26 46-42 84-42s70 16 84 42c-14 14-46 22-84 22s-70-8-84-22z" fill="url(#jam)" stroke="#7a1229" stroke-width="4"/>
+          </g>
+
+          <g class="bun bun--front">
+            <path d="M160 368c0-60 54-100 150-100s150 40 150 100c0 54-54 84-150 84s-150-30-150-84z" fill="url(#bunBig)" stroke="#b9782f" stroke-width="5"/>
+            <path d="M168 392c40 18 96 26 142 26s102-8 142-26" fill="none" stroke="#c07f3a" stroke-width="6" opacity=".4" stroke-linecap="round"/>
+            <path d="M186 330c22-38 60-56 124-56s102 18 124 56c-30 12-70 18-124 18s-94-6-124-18z" fill="#f9d9a4" opacity=".5"/>
+            <g fill="#fff8ea" opacity=".55">
+              <circle cx="210" cy="316" r="2.6"/><circle cx="240" cy="300" r="2.2"/><circle cx="272" cy="290" r="2.8"/>
+              <circle cx="306" cy="286" r="2.3"/><circle cx="340" cy="288" r="2.6"/><circle cx="374" cy="296" r="2.2"/>
+              <circle cx="404" cy="310" r="2.5"/><circle cx="188" cy="336" r="2"/>
+            </g>
+
+            <path d="M186 346c12-36 56-58 124-58s112 22 124 58c6 18-4 30-18 33-20-9-58-14-106-14s-86 5-106 14c-14-3-24-15-18-33z" fill="url(#jam)" stroke="#7a1229" stroke-width="5"/>
+            <path d="M208 334c12-18 44-28 102-28s90 10 102 28c-24 8-58 12-102 12s-78-4-102-12z" fill="#d24a66" opacity=".38"/>
+            <ellipse cx="262" cy="312" rx="30" ry="8" fill="#fff" opacity=".18" transform="rotate(-8 262 312)"/>
+
+            <g fill="url(#jam)" stroke="#7a1229" stroke-width="4">
+              <path class="drip d1" d="M232 366c9 0 15 6 15 15v36c0 11-6 18-15 18s-14-7-14-18v-36c0-9 6-15 14-15z"/>
+              <path class="drip d2" d="M310 372c10 0 17 7 17 17v62c0 12-7 20-17 20s-16-8-16-20v-62c0-10 7-17 16-17z"/>
+              <path class="drip d3" d="M392 366c8 0 14 6 14 14v26c0 10-6 16-14 16s-14-6-14-16v-26c0-8 6-14 14-14z"/>
+            </g>
+            <circle cx="310" cy="494" r="6" fill="url(#jam)" stroke="#7a1229" stroke-width="3"/>
+            <circle cx="196" cy="464" r="4" fill="#c98a3f" opacity=".5"/>
+            <circle cx="430" cy="468" r="3.4" fill="#c98a3f" opacity=".45"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section about" id="about">
+    <div class="wrap about__grid">
+      <div class="about__copy reveal">
+        <p class="eyebrow"><span class="dot"></span>О нас</p>
+        <h2>Маленькая кофейня<br>с большим характером</h2>
+        <p>«Кофе Ягоды» — это стойка, две кофемашины и полка с выпечкой в Промышленном районе Ставрополя, рядом с ТЦ «Триумф». Мы не гонимся за трендами: варим понятный кофе, добавляем ягоды и печём то, что сами любим к завтраку.</p>
+        <p>Заходите за капучино по дороге на работу, за рафом — после, и за булочкой — просто так.</p>
+      </div>
+      <div class="about__facts reveal">
+        <div class="fact"><b>4,1</b><span>рейтинг на Яндекс.Картах</span></div>
+        <div class="fact"><b>08–21</b><span>работаем каждый день</span></div>
+        <div class="fact"><b>11Б</b><span>Бруснёва, у ТЦ «Триумф»</span></div>
+        <div class="fact"><b>21</b><span>отзыв уже оставили</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="section reviews" id="reviews">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow eyebrow--dark"><span class="dot"></span>Отзывы</p>
+        <h2>Что говорят гости</h2>
+      </header>
+      <div class="reviews__grid">
+        <figure class="review reveal">
+          <div class="review__stars" aria-label="5 из 5">★★★★★</div>
+          <blockquote>«Кофе вкусный, лимонады шикарные. Очень приветливый персонал. Заказ выполнили быстро. Вкусная и свежая выпечка»</blockquote>
+          <figcaption>Полина М. <span>· Яндекс.Карты</span></figcaption>
+        </figure>
+        <figure class="review reveal">
+          <div class="review__stars" aria-label="5 из 5">★★★★★</div>
+          <blockquote>«Офигенный кофе, девчонки приятные, опрятные обслуживают. Клубника вкуснейшая, самые вкусные в городе мороженки!»</blockquote>
+          <figcaption>Flory <span>· Яндекс.Карты</span></figcaption>
+        </figure>
+        <figure class="review review--accent reveal">
+          <div class="review__score">4,1<span>/5</span></div>
+          <p class="review__sum">Средняя оценка гостей на Яндекс.Картах — 21 отзыв о кофе, выпечке и персонале.</p>
+          <a class="review__link" href="https://yandex.ru/maps/org/kofe_yagody/133232600497/reviews/" target="_blank" rel="noopener">Читать все отзывы&nbsp;→</a>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTS ================= -->
+  <section class="section contacts" id="contacts">
+    <div class="wrap contacts__grid">
+      <div class="contacts__copy reveal">
+        <p class="eyebrow eyebrow--dark"><span class="dot"></span>Контакты</p>
+        <h2>Заходите<br>на кофе</h2>
+        <address>
+          <p class="contacts__line"><span>Адрес</span>Ставрополь, ул. Бруснёва, 11Б<br><small>Промышленный район, 19-й микрорайон, рядом с ТЦ «Триумф»</small></p>
+          <p class="contacts__line"><span>Телефон</span><a href="tel:+79880969030">+7 (988) 096-90-30</a></p>
+          <p class="contacts__line"><span>Часы</span>Ежедневно, 08:00 — 21:00</p>
+        </address>
+        <div class="actions">
+          <a class="btn btn--primary" href="tel:+79880969030">Позвонить</a>
+          <a class="btn btn--outline" href="https://yandex.ru/maps/org/kofe_yagody/133232600497/" target="_blank" rel="noopener">Открыть на карте</a>
+        </div>
+      </div>
+
+      <div class="mapcard reveal" aria-label="Схема расположения">
+        <svg class="mapcard__map" viewBox="0 0 600 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="600" height="560" fill="#e9d8c1"/>
+          <g fill="#ddc6a7">
+            <rect x="24" y="30" width="160" height="120" rx="10" transform="rotate(-7 104 90)"/>
+            <rect x="24" y="176" width="130" height="80" rx="10" transform="rotate(-7 89 216)"/>
+            <rect x="210" y="26" width="120" height="94" rx="10" transform="rotate(-7 270 73)"/>
+            <rect x="392" y="230" width="150" height="110" rx="10" transform="rotate(-7 467 285)"/>
+            <rect x="60" y="360" width="150" height="130" rx="10" transform="rotate(-7 135 425)"/>
+            <rect x="300" y="392" width="120" height="120" rx="10" transform="rotate(-7 360 452)"/>
+            <rect x="470" y="120" width="110" height="70" rx="10" transform="rotate(-7 525 155)"/>
+          </g>
+          <rect x="404" y="42" width="160" height="128" rx="18" fill="#c6cfa4" transform="rotate(-7 484 106)"/>
+          <g fill="#b3bf8e">
+            <circle cx="438" cy="86" r="9"/><circle cx="470" cy="70" r="7"/><circle cx="510" cy="96" r="8"/>
+            <circle cx="452" cy="126" r="6"/><circle cx="530" cy="132" r="7"/>
+          </g>
+          <path d="M-30 306 L630 214" stroke="#f9f2e6" stroke-width="40"/>
+          <path d="M-30 306 L630 214" stroke="#dcc7a8" stroke-width="2.5" stroke-dasharray="12 14"/>
+          <path d="M206 -20 L262 580" stroke="#f9f2e6" stroke-width="34"/>
+          <path d="M206 -20 L262 580" stroke="#dcc7a8" stroke-width="2.5" stroke-dasharray="12 14"/>
+          <path d="M-20 120 L620 74" stroke="#f3e9d9" stroke-width="14" opacity=".8"/>
+          <text x="118" y="306" fill="#b09a7c" font-family="Manrope, sans-serif" font-size="15" font-weight="700" transform="rotate(-7 118 306)">ул. Бруснёва</text>
+          <text x="470" y="196" fill="#8d9a70" font-family="Manrope, sans-serif" font-size="12" font-weight="700" transform="rotate(-7 470 196)">сквер</text>
+        </svg>
+        <div class="mapcard__pin">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="36" r="20" fill="#a8233f"/><circle cx="32" cy="36" r="8" fill="#f7efe3"/></svg>
+        </div>
+        <div class="mapcard__label">Кофе Ягоды<span>Бруснёва, 11Б</span></div>
+        <div class="mapcard__tc">ТЦ «Триумф» — 2 минуты</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__row">
+    <a class="logo logo--footer" href="#top">
+      <svg class="logo__berry" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="36" r="20" fill="#c9304e"/>
+        <path d="M32 16c5-6 13-8 19-7-1 7-7 13-15 15z" fill="#7d8f6a"/>
+      </svg>
+      <span class="logo__text">Кофе <em>Ягоды</em></span>
+    </a>
+    <p>Ставрополь, Бруснёва, 11Б · ежедневно 08:00–21:00</p>
+    <p class="footer__note">© 2026 Кофе Ягоды. Цены и состав уточняйте у бариста.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
